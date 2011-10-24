@@ -30,10 +30,10 @@ clear all; close all; clc
 % Complete warmUpExercise.m 
 fprintf('Running warmUpExercise ... \n');
 fprintf('5x5 Identity Matrix: \n');
-warmUpExercise()
+%warmUpExercise()
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
+%fprintf('Program paused. Press enter to continue.\n');
+%pause;
 
 
 %% ======================= Part 2: Plotting =======================
@@ -46,8 +46,8 @@ m = length(y); % number of training examples
 % Note: You have to complete the code in plotData.m
 plotData(X, y);
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
+%fprintf('Program paused. Press enter to continue.\n');
+%pause;
 
 %% =================== Part 3: Gradient descent ===================
 fprintf('Running Gradient Descent ...\n')
