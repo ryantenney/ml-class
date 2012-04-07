@@ -21,12 +21,23 @@ grad = zeros(size(theta));
 %
 
 
+	for i = 1:m
 
+		yi = y;
+		xi = X(i, :);
 
+		xtheta = theta' * xi;
 
+		J = J + ((-yi * log(xtheta)) - ((1 - yi) * log(1 - xtheta)));
 
+	end
 
 
 % =============================================================
 
+end
+
+
+function gx = g(z)
+	gz = 1 ./ (1 + e .^ (-z));
 end

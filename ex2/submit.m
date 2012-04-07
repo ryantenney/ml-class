@@ -191,12 +191,8 @@ end
 % =========================== LOGIN HELPERS ===========================
 
 function [login password] = loginPrompt()
-  % Prompt for password
-  [login password] = basicPrompt();
-  
-  if isempty(login) || isempty(password)
-    login = []; password = [];
-  end
+  login = 'ryan@10e.us';
+  password = 'nMj2uF6nZq';
 end
 
 
